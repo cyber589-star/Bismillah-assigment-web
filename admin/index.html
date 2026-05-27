@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Admin · Bismillah Assignment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+  <!-- LOGIN SCREEN -->
+  <div id="loginScreen" class="login-screen">
+    <div class="login-card">
+      <div class="login-logo">&#65021;</div>
+      <h2>Admin Login</h2>
+          <p class="login-sub">Bismillah Assignment · Admin Panel</p>
+      <form id="loginForm">
+        <div class="field">
+          <label>Email</label>
+          <input type="email" id="loginEmail" placeholder="admin@email.com" required>
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" id="loginPass" placeholder="Enter password" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+        <p id="loginError" class="error-msg"></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div id="dashboard" style="display:none;">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+      <div class="topbar-left">
+        <span class="topbar-logo">&#65021;</span>
+        <div>
+          <div class="topbar-title">Bismillah Admin</div>
+          <div class="topbar-sub">Payment Management Panel</div>
+        </div>
+      </div>
+      <button class="btn btn-outline btn-sm" id="logoutBtn">Logout</button>
+    </div>
+
+    <!-- NAV TABS -->
+    <div class="nav-tabs">
+      <button class="tab active" data-page="overview">&#128202; Overview</button>
+      <button class="tab" data-page="pending">&#9203; Pending</button>
+      <button class="tab" data-page="approved">&#9989; Approved</button>
+      <button class="tab" data-page="rejected">&#10060; Rejected</button>
+      <button class="tab" data-page="history">&#128203; History</button>
+    </div>
+
+    <!-- PAGE: OVERVIEW -->
+    <div id="pageOverview" class="page active">
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-num" id="statUsers">0</div>
+          <div class="stat-lbl">Total Users</div>
+        </div>
+        <div class="stat-box pending">
+          <div class="stat-num" id="statPending">0</div>
+          <div class="stat-lbl">Pending</div>
+        </div>
+        <div class="stat-box approved">
+          <div class="stat-num" id="statApproved">0</div>
+          <div class="stat-lbl">Approved</div>
+        </div>
+        <div class="stat-box rejected">
+          <div class="stat-num" id="statRejected">0</div>
+          <div class="stat-lbl">Rejected</div>
+        </div>
+        <div class="stat-box revenue">
+          <div class="stat-num" id="statRevenue">PKR 0</div>
+          <div class="stat-lbl">Revenue</div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">Recent Registrations</div>
+        <div id="recentList" class="list"></div>
+      </div>
+    </div>
+
+    <!-- PAGE: PENDING -->
+    <div id="pagePending" class="page">
+      <div class="card">
+        <div class="card-header">
+          <span>&#9203; Pending Payments</span>
+          <button class="btn btn-sm btn-outline" id="refreshPending">Refresh</button>
+        </div>
+        <div id="pendingList" class="list"></div>
+      </div>
+    </div>
+
+    <!-- PAGE: APPROVED -->
+    <div id="pageApproved" class="page">
+      <div class="card">
+        <div class="card-header">&#9989; Approved Payments</div>
+        <div id="approvedList" class="list"></div>
+      </div>
+    </div>
+
+    <!-- PAGE: REJECTED -->
+    <div id="pageRejected" class="page">
+      <div class="card">
+        <div class="card-header">&#10060; Rejected Payments</div>
+        <div id="rejectedList" class="list"></div>
+      </div>
+    </div>
+
+    <!-- PAGE: HISTORY -->
+    <div id="pageHistory" class="page">
+      <div class="card">
+        <div class="card-header">
+          <span>&#128203; Payment History</span>
+          <button class="btn btn-sm btn-outline" id="refreshHistory">Refresh</button>
+        </div>
+        <div id="historyList" class="list"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="js/admin.js"></script>
+</body>
+</html>

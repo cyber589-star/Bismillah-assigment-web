@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us · Bismillah Assignment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .page-hero { padding: 180px 0 80px; text-align: center; background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%); position: relative; }
+    .page-hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-dark), transparent); }
+    .page-hero h1 { font-family: 'Playfair Display', serif; font-size: clamp(36px, 5vw, 56px); font-weight: 700; }
+    .page-hero h1 span { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .page-content { padding: 80px 0; }
+    .content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .content-text h2 { font-family: 'Playfair Display', serif; font-size: 32px; margin-bottom: 16px; }
+    .content-text h2 span { background: var(--gold-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .content-text p { color: var(--text-secondary); font-size: 16px; line-height: 1.8; margin-bottom: 16px; }
+    .content-image { background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: 20px; padding: 60px 40px; text-align: center; }
+    .content-image .big-icon { font-size: 80px; display: block; margin-bottom: 24px; }
+    .content-image h3 { font-family: 'Playfair Display', serif; color: var(--gold); font-size: 24px; }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+    .value-card { background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: 16px; padding: 32px; text-align: center; }
+    .value-card .val-icon { font-size: 36px; margin-bottom: 12px; }
+    .value-card h3 { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--gold); }
+    @media (max-width: 768px) { .content-grid { grid-template-columns: 1fr; } .values-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar scrolled"><div class="nav-container">
+    <a href="/" class="nav-logo"><span class="logo-icon">﷽</span><span class="logo-text">Bismillah <span class="logo-highlight">Assignments</span></span></a>
+    <div class="nav-links"><a href="/">Home</a><a href="/#packages">Packages</a><a href="/#register">Register</a><a href="/#payment">Payment</a><a href="about.html" class="active">About</a><a href="contact.html">Contact</a></div>
+    <div class="nav-actions"></div>
+  </div></nav>
+
+  <section class="page-hero"><div class="container">
+    <h1>About <span>Us</span></h1>
+    <p style="color:var(--text-secondary);margin-top:16px;font-size:18px;">Pakistan's Most Trusted Assignment & Typing Service Platform</p>
+  </div></section>
+
+  <section class="page-content"><div class="container">
+    <div class="content-grid">
+      <div class="content-text">
+        <h2>Who We <span>Are</span></h2>
+        <p>Bismillah Assignment is a premier platform in Pakistan connecting talented individuals with professional assignment and typing work. We provide high-quality handwritten and MS Word document solutions for students, professionals, and organizations.</p>
+        <p>Founded on the principles of integrity and excellence, we offer daily salary payouts via JazzCash and EasyPaisa, ensuring our workers are compensated fairly and on time. Our platform has empowered hundreds of individuals across Pakistan to earn a dignified income from home.</p>
+        <p>Whether it's assignments, projects, PDF scanning, or handwritten work, we deliver exceptional quality that meets the highest academic and professional standards.</p>
+      </div>
+      <div class="content-image">
+        <span class="big-icon">﷽</span>
+        <h3>Bismillah Assignment</h3>
+        <p style="color:var(--text-muted);margin-top:12px;">Handwritten & Typing Services</p>
+      </div>
+    </div>
+
+    <h2 style="font-family:'Playfair Display',serif;font-size:28px;margin-top:64px;text-align:center;">Our <span style="background:var(--gold-gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Values</span></h2>
+    <div class="values-grid">
+      <div class="value-card"><div class="val-icon">🕌</div><h3>Faith</h3><p style="color:var(--text-secondary);font-size:14px;margin-top:8px;">Guided by Islamic principles of honesty and fairness</p></div>
+      <div class="value-card"><div class="val-icon">⚡</div><h3>Excellence</h3><p style="color:var(--text-secondary);font-size:14px;margin-top:8px;">Commitment to delivering highest quality work</p></div>
+      <div class="value-card"><div class="val-icon">💝</div><h3>Trust</h3><p style="color:var(--text-secondary);font-size:14px;margin-top:8px;">Building lasting relationships through reliability</p></div>
+    </div>
+  </div></section>
+
+  <footer class="footer"><div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><span class="logo-icon">﷽</span><h3>Bismillah Assignment</h3><p>Premium handwritten & typing assignment services in Pakistan.</p></div>
+      <div class="footer-links"><h4>Quick Links</h4><a href="/">Home</a><a href="/#packages">Packages</a><a href="/#register">Register</a><a href="/#payment">Payment</a></div>
+      <div class="footer-links"><h4>Pages</h4><a href="about.html">About Us</a><a href="contact.html">Contact</a><a href="privacy.html">Privacy Policy</a></div>
+      <div class="footer-links"><h4>Contact</h4><p>0346 7692844</p><p>0344 2316061</p><p>info@bismillahassignment.com</p></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 Bismillah Assignment. All rights reserved.</p><p>Made with ﷽</p></div>
+  </div></footer>
+</body>
+</html>

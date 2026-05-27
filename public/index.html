@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Bismillah Assignment · Premium Assignment Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="/" class="nav-logo">BISMILLAH<span>AI</span></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#packages">Packages</a>
+      <a href="#register">Register</a>
+      <a href="#payment">Payment</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-cta" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Get Started</button>
+    <button class="nav-toggle" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE FULL MENU -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#services">Services</a>
+    <a href="#packages">Packages</a>
+    <a href="#register">Register</a>
+    <a href="#payment">Payment</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- BOTTOM MOBILE NAV -->
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="#home" class="bnav-item active">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+      <span>Home</span>
+    </a>
+    <a href="#packages" class="bnav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 9.4l-9-5.19M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 002 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+      <span>Packages</span>
+    </a>
+    <a href="#register" class="bnav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+      <span>Register</span>
+    </a>
+    <a href="#payment" class="bnav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      <span>Payment</span>
+    </a>
+    <a href="#contact" class="bnav-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+      <span>Contact</span>
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>
+        BISMILLAH<br>
+        <span class="text-primary">ASSIGNMENTS</span>
+      </h1>
+      <p class="hero-sub">Handwritten &amp; Typing · Daily Salary via JazzCash/EasyPaisa</p>
+      <p class="hero-desc">Professional assignment platform connecting talented individuals with daily work. Trusted by hundreds across Pakistan. All of it done right, not just fast.</p>
+      <div class="hero-buttons">
+        <button class="hero-btn-primary" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Register Now</button>
+        <button class="hero-btn-outline" onclick="document.getElementById('packages').scrollIntoView({behavior:'smooth'})">View Packages</button>
+      </div>
+      <p class="hero-trust">Trusted work partner. Pakistan. 12+ active workers. Since 2024.</p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section section-services" id="services">
+    <div class="container">
+      <h2 class="section-title">What We<br><span class="text-primary">Offer</span></h2>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&q=80" alt="Assignments" loading="lazy">
+          <span class="service-card-tag">Assignments</span>
+          <div class="service-card-overlay"><button class="service-card-btn">Learn More</button></div>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" alt="Projects" loading="lazy">
+          <span class="service-card-tag">Projects</span>
+          <div class="service-card-overlay"><button class="service-card-btn">Learn More</button></div>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80" alt="PDF Scan" loading="lazy">
+          <span class="service-card-tag">PDF Scan</span>
+          <div class="service-card-overlay"><button class="service-card-btn">Learn More</button></div>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <img src="https://images.unsplash.com/photo-1586282391129-76a6df230234?w=600&q=80" alt="Handwritten" loading="lazy">
+          <span class="service-card-tag">Handwritten</span>
+          <div class="service-card-overlay"><button class="service-card-btn">Learn More</button></div>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&q=80" alt="Typing" loading="lazy">
+          <span class="service-card-tag">Typing</span>
+          <div class="service-card-overlay"><button class="service-card-btn">Learn More</button></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="section section-packages" id="packages">
+    <div class="container">
+      <h2 class="section-title">Choose<br><span class="text-primary">Package</span></h2>
+      <div style="margin-bottom: 40px;">
+        <p style="font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: hsl(var(--muted-foreground));">6-month contract · Daily salary via JazzCash / EasyPaisa</p>
+      </div>
+      <div class="packages-grid" id="packagesGrid"></div>
+    </div>
+  </section>
+
+  <!-- REGISTER -->
+  <section class="section section-register" id="register">
+    <div class="container">
+      <h2 class="section-title">Join<br><span class="text-primary">Us Today</span></h2>
+      <div class="register-wrapper">
+        <div class="info-card reveal">
+          <h3>Why Join?</h3>
+          <ul>
+            <li>Daily salary payout</li>
+            <li>Flexible working hours</li>
+            <li>Work from home</li>
+            <li>Handwritten &amp; typing work</li>
+            <li>Timely payments via JazzCash/EasyPaisa</li>
+          </ul>
+        </div>
+        <div class="register-form reveal reveal-delay-1">
+          <div class="form-header">
+            <h3>Register</h3>
+            <p class="selected-pkg" id="selectedPkgInfo">Joining PKR 1,000 · 4 pages · Daily PKR 4,100</p>
+          </div>
+          <form id="registrationForm">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" name="full_name" placeholder="Muhammad Ali" required>
+            </div>
+            <div class="form-group">
+              <label>CNIC Number</label>
+              <input type="text" name="cnic" placeholder="xxxxx-xxxxxxx-x" required>
+            </div>
+            <div class="form-group">
+              <label>Qualification</label>
+              <select name="qualification" required>
+                <option value="">— select —</option>
+                <option value="Matric">Matric</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Bachelor">Bachelor</option>
+                <option value="Master">Master</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>WhatsApp Number</label>
+              <input type="text" name="whatsapp" placeholder="03xxxxxxxxx" required>
+            </div>
+            <div class="form-group">
+              <label>Gender</label>
+              <div class="radio-group">
+                <label class="radio-label"><input type="radio" name="gender" value="Male"> Male</label>
+                <label class="radio-label"><input type="radio" name="gender" value="Female"> Female</label>
+                <label class="radio-label"><input type="radio" name="gender" value="Other"> Other</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Select Package</label>
+              <select id="packageSelect" required></select>
+            </div>
+            <div class="form-group">
+              <label>Payment Method</label>
+              <div class="payment-method-grid">
+                <label><input type="radio" name="payment_method" value="EasyPaisa" required> EasyPaisa</label>
+                <label><input type="radio" name="payment_method" value="JazzCash"> JazzCash</label>
+              </div>
+            </div>
+            <div class="form-group" id="paymentNumberGroup">
+              <label>Your EasyPaisa / JazzCash Number</label>
+              <input type="text" name="payment_number" placeholder="03xxxxxxxxx" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Register Now</button>
+          </form>
+
+          <div id="formSuccess" style="display:none;">
+            <div class="success-icon">&#10003;</div>
+            <h3 style="font-size: 22px; font-weight: 600; letter-spacing: -0.02em; color: hsl(var(--foreground)); text-transform: uppercase; margin: 16px 0 8px; text-align: center;">Registered!</h3>
+            <p style="text-align: center; color: hsl(var(--muted-foreground)); font-size: 13px; margin-bottom: 12px;">Payment Pending — Waiting for Admin Approval</p>
+            <div class="status-msg pending" id="statusMsg">&#9203; Payment Pending — Waiting for Admin Approval</div>
+            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid hsl(var(--border));">
+              <p style="font-size: 10px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: hsl(var(--muted-foreground)); margin-bottom: 12px;">Upload Payment Proof</p>
+              <div class="upload-area" id="uploadArea">
+                <span class="upload-icon">&#128193;</span>
+                <div class="upload-text">Tap to upload payment screenshot</div>
+                <div class="upload-file" id="uploadFileName" style="font-size: 11px; color: hsl(var(--foreground)); margin-top: 4px;"></div>
+                <input type="file" id="proofInput" accept="image/*" capture="environment">
+              </div>
+              <div id="proofPreview" style="display:none"></div>
+              <button class="btn btn-primary btn-block" id="submitProofBtn" style="display:none; margin-top: 10px;">Submit Proof</button>
+            </div>
+            <a href="#payment" class="btn btn-outline btn-block" style="margin-top: 12px;">View Payment Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAYMENT -->
+  <section class="section section-payment" id="payment">
+    <div class="container">
+      <h2 class="section-title">Payment<br><span class="text-primary">Details</span></h2>
+      <div class="payment-wrapper">
+        <div class="payment-accounts">
+          <h3>Send Joining Fee To</h3>
+          <div class="account-card reveal">
+            <div class="account-label">EasyPaisa</div>
+            <div class="account-name">MUHAMMAD BARKAT</div>
+            <div class="account-number">
+              <span>0343 6307951</span>
+              <button class="btn-copy" data-copy="03436307951">Copy</button>
+            </div>
+          </div>
+          <div class="account-card reveal reveal-delay-1">
+            <div class="account-label">JazzCash</div>
+            <div class="account-name">MUHAMMAD NAEEM</div>
+            <div class="account-number">
+              <span>0323 1962950</span>
+              <button class="btn-copy" data-copy="03231962950">Copy</button>
+            </div>
+          </div>
+        </div>
+        <div class="payment-notice reveal reveal-delay-2">
+          <div class="notice-badge">Pending Fees</div>
+          <div class="notice-amount" id="noticeAmount">PKR 1,000</div>
+          <p class="notice-urdu">براہ کرم مقررہ مدت میں فیس جمع کروائیں</p>
+          <p class="notice-urdu-sub">آپ کے منتخب کردہ پیکج کی فیس: <strong id="noticePkgFee">PKR 1,000</strong></p>
+          <p style="font-size: 13px; color: hsl(var(--muted-foreground)); margin-top: 6px;">Daily Salary: <strong id="noticeDaily" style="color: hsl(var(--primary));">PKR 4,100</strong></p>
+          <div class="notice-footer">Daily salary via JazzCash / EasyPaisa · Pakistan</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Get In<br><span class="text-primary">Touch</span></h2>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-item reveal">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
+            <div><strong>Call / WhatsApp</strong><p>0323 1962950<br>0343 6307951</p></div>
+          </div>
+          <div class="contact-item reveal reveal-delay-1">
+            <div class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><strong>Location</strong><p>Pakistan</p></div>
+          </div>
+        </div>
+        <div class="contact-form reveal reveal-delay-1">
+          <form id="contactForm">
+            <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+            <div class="form-group"><input type="email" name="email" placeholder="Your Email" required></div>
+            <div class="form-group"><textarea name="message" rows="4" placeholder="Your Message" required></textarea></div>
+            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-newsletter">
+        <h3>Stay Updated</h3>
+        <div class="newsletter-wrap">
+          <input type="email" class="newsletter-input" placeholder="Your email address">
+          <button class="btn btn-outline" style="margin-top: 12px;" onclick="showToast('Subscribed!','success')">Subscribe</button>
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-icon">&#65021;</span>
+          <h3>Bismillah Assignment</h3>
+          <p>Premium handwritten &amp; typing assignment services in Pakistan. Daily salary via JazzCash / EasyPaisa.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+          <a href="#packages">Packages</a>
+          <a href="#register">Register</a>
+          <a href="#payment">Payment</a>
+        </div>
+        <div class="footer-links">
+          <h4>More</h4>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+          <a href="blog.html">Blog</a>
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contact</h4>
+          <p>0323 1962950</p>
+          <p>0343 6307951</p>
+          <p>info@bismillahassignment.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bismillah Assignment</p>
+        <p>Made with &#65021; · Pakistan</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
