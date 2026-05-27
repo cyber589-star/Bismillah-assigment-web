@@ -16,8 +16,10 @@ app.use(express.json());
 app.use(express.static(path.join(BASE, 'public')));
 app.use('/admin', express.static(path.join(BASE, 'admin')));
 
-if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
-if (!fs.existsSync(UPLOADS_DIR)) fs.mkdirSync(UPLOADS_DIR, { recursive: true });
+try {
+  if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+  if (!fs.existsSync(UPLOADS_DIR)) fs.mkdirSync(UPLOADS_DIR, { recursive: true });
+} catch (e) { console.error('Dir error:', e.message); }
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => cb(null, UPLOADS_DIR),
@@ -36,6 +38,7 @@ function writeJson(file, data) {
 }
 
 // Seed default data
+try {
 if (!fs.existsSync(path.join(DATA_DIR, 'packages.json'))) {
   writeJson('packages.json', [
     { id: 1, joining_fee: 1000, daily_salary: 4100, pages: 4, work_types: 'handwritten, MS word', is_active: true },
@@ -48,9 +51,10 @@ if (!fs.existsSync(path.join(DATA_DIR, 'packages.json'))) {
 if (!fs.existsSync(path.join(DATA_DIR, 'admins.json'))) {
   writeJson('admins.json', [{ id: 1, email: 'rehan1122@atomicmail.io', password: 'Khan!' }]);
 }
-['registrations.json', 'payments.json', 'payment_history.json'].forEach(f => {
-  if (!fs.existsSync(path.join(DATA_DIR, f))) writeJson(f, []);
-});
+  ['registrations.json', 'payments.json', 'payment_history.json'].forEach(f => {
+    if (!fs.existsSync(path.join(DATA_DIR, f))) writeJson(f, []);
+  });
+} catch (e) { console.error('Seed error:', e.message); }
 
 function nextId(arr) { return arr.length > 0 ? Math.max(...arr.map(x => x.id)) + 1 : 1; }
 
