@@ -1,5 +1,8 @@
 node_modules/
 data/
+*.db
+server.err
+server.log
 public/uploads/*
 !public/uploads/.gitkeep
 .env
