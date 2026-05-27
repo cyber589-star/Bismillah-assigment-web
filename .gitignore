@@ -3,6 +3,8 @@ data/
 *.db
 server.err
 server.log
+.next/
+out/
 public/uploads/*
 !public/uploads/.gitkeep
 .env
