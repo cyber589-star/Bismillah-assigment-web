@@ -23,11 +23,9 @@ function writeJson(file, data) {
 try {
   if (!fs.existsSync(path.join(DATA_DIR, 'packages.json'))) {
     writeJson('packages.json', [
-      { id: 1, joining_fee: 1000, daily_salary: 4100, pages: 4, work_types: 'handwritten, MS word', is_active: true },
-      { id: 2, joining_fee: 2600, daily_salary: 7200, pages: 5, work_types: 'handwritten, MS word', is_active: true },
-      { id: 3, joining_fee: 4100, daily_salary: 11200, pages: 6, work_types: 'handwritten, MS word', is_active: true },
-      { id: 4, joining_fee: 6200, daily_salary: 16400, pages: 8, work_types: 'handwritten, MS word', is_active: true },
-      { id: 5, joining_fee: 8000, daily_salary: 19100, pages: 9, work_types: 'handwritten, MS word', is_active: true }
+      { id: 1, joining_fee: 1000, daily_salary: 2000, pages: 10, work_types: 'handwritten, MS word', is_active: true },
+      { id: 2, joining_fee: 2000, daily_salary: 4000, pages: 20, work_types: 'handwritten, MS word', is_active: true },
+      { id: 3, joining_fee: 3000, daily_salary: 5000, pages: 25, work_types: 'handwritten, MS word', is_active: true }
     ]);
   }
   if (!fs.existsSync(path.join(DATA_DIR, 'admins.json'))) {
